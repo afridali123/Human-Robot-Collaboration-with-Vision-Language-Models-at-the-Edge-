@@ -1,0 +1,12 @@
+[
+  {
+    "name": "person_detected",
+    "contains": "PERSON_DETECTED",
+    "command": "echo PERSON_DETECTED"
+  },
+  {
+    "name": "pick_red_object",
+    "contains": "PICK_RED_OBJECT",
+    "command": "echo PICK_RED_OBJECT"
+  }
+]

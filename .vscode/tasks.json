@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Doctor",
+      "type": "shell",
+      "command": "./scripts/doctor.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Setup Jetson",
+      "type": "shell",
+      "command": "./scripts/setup_jetson.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Capture Camera Frame",
+      "type": "shell",
+      "command": "./scripts/demo_camera_capture.sh --no-preview",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Image VLM",
+      "type": "shell",
+      "command": "./scripts/demo_image_vlm.sh images/capture.jpg \"What should the robot do?\"",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start RTSP Server",
+      "type": "shell",
+      "command": "./scripts/start_rtsp_server.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Register RTSP with JPS",
+      "type": "shell",
+      "command": "./scripts/register_rtsp_with_jps.sh",
+      "problemMatcher": []
+    }
+  ]
+}

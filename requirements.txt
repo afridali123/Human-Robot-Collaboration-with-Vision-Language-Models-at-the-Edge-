@@ -1,0 +1,6 @@
+requests>=2.31.0
+Pillow>=10.0.0
+transformers>=4.40.0
+accelerate>=0.29.0
+sentencepiece>=0.2.0
+protobuf>=4.25.0
