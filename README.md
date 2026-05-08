@@ -116,9 +116,37 @@ Use FP16 / INT8 quantization
 Convert models → ONNX → TensorRT
 Reduce image resolution for faster inference
 Use smaller VLM models for edge deployment
-🧪 Future Improvements
+
+##🧪 Future Improvements
 Add real-time video streaming pipeline
 Integrate ROS2 for robot control
 Add voice input (Whisper) + speech output (TTS)
 Deploy via Flask / FastAPI API service
 Optimize using TensorRT-LLM / Edge AI SDKs
+
+## 👤 Author
+
+Afrid Thenebanda
+Speaker @ India Electronics Week 2026
+Focus: Robotics | Computer Vision | Edge AI
+##⭐ Support
+
+If you found this useful, please ⭐ star the repo!
+
+---
+
+# 🚀 Pro Tip (Important for You)
+
+After publishing:
+- Add this repo to your **LinkedIn post**
+- Mention:
+  👉 *“Live demo code for my India Electronics Week talk”*
+
+This instantly boosts your **visibility + credibility**.
+
+---
+
+If you want next:
+- I can help you **create requirements.txt**
+- Or build a **clean demo UI (Gradio/Web app)**
+- Or make your repo look like a **top-tier GitHub project (badges, banners, visuals)**
