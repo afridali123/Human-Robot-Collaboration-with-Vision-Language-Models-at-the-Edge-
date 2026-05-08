@@ -28,6 +28,7 @@ It showcases how **computer vision + GenAI** can enable **human-robot collaborat
 
 ## 🏗️ System Architecture
 
+```text
 Camera / Image Input
         ↓
 Object Detection (YOLO - TensorRT)
@@ -41,6 +42,7 @@ Prompt + Query
 GenAI Agent Logic
         ↓
 Robot / IoT Action
+'''text
 
 ## 🛠️ Tech Stack
 Hardware: NVIDIA Jetson AGX Orin
