@@ -1,5 +1,5 @@
 # Human-Robot-Collaboration-with-Vision-Language-Models-at-the-Edge
-# 🚀 Vision-Language Models on Jetson AGX Orin  
+
 ### Edge AI for Human-Robot Collaboration  
 
 Deploy Vision-Language Models (VLMs) on **NVIDIA Jetson AGX Orin** to enable robots and edge devices to **see, understand, and reason** in real time.
