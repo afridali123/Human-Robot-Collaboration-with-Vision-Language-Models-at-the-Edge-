@@ -42,3 +42,83 @@ Prompt + Query
 GenAI Agent Logic
         ↓
 Robot / IoT Action
+
+
+## 🛠️ Tech Stack
+Hardware: NVIDIA Jetson AGX Orin
+Frameworks: PyTorch, Hugging Face Transformers
+Acceleration: TensorRT (optional optimization)
+Vision Models: YOLOv8
+VLM Models: LLaVA / BLIP
+Tools: OpenCV, Docker, jetson-containers
+
+## 📁 Project Structure
+vlm-jetson-demo/
+├── README.md
+├── app/
+│   ├── vlm_image_demo.py
+│   ├── camera_capture.py
+│   ├── agent_logic.py
+├── images/
+│   └── sample.jpg
+├── scripts/
+│   ├── run_container.sh
+│   └── check_camera.sh
+└── requirements.txt
+
+## ⚙️ Setup Instructions
+1. Clone Repository
+git clone https://github.com/your-username/vlm-jetson-demo.git
+cd vlm-jetson-demo
+2. Prepare Jetson Environment
+sudo apt update
+sudo apt install -y python3-pip python3-venv git
+
+(Optional: enable max performance)
+
+sudo nvpmodel -m 0
+sudo jetson_clocks
+3. Install Dependencies
+pip3 install torch torchvision transformers opencv-python pillow
+4. (Recommended) Use Jetson Containers
+git clone https://github.com/dusty-nv/jetson-containers
+cd jetson-containers
+bash install.sh
+
+## Run container:
+
+jetson-containers run $(autotag llava)
+▶️ Running the Demo
+📷 Step 1: Capture Image
+python3 app/camera_capture.py --camera 0 --output images/capture.jpg
+🧠 Step 2: Run VLM
+python3 app/vlm_image_demo.py \
+  --image images/capture.jpg \
+  --prompt "Describe the objects in this scene."
+🤖 Step 3: Agent Decision
+python3 app/agent_logic.py
+💡 Example Output
+Input: "What do you see?"
+
+Output:
+"There is a red box and a bottle on a table."
+
+## Action:
+→ Robot can pick the red box
+🚀 Use Cases
+🤖 Human-Robot Collaboration
+📦 Smart Warehousing
+🏙️ Smart Surveillance
+🏥 Healthcare Assistants
+🌱 Edge AI for IoT Systems
+⚡ Optimization Tips
+Use FP16 / INT8 quantization
+Convert models → ONNX → TensorRT
+Reduce image resolution for faster inference
+Use smaller VLM models for edge deployment
+🧪 Future Improvements
+Add real-time video streaming pipeline
+Integrate ROS2 for robot control
+Add voice input (Whisper) + speech output (TTS)
+Deploy via Flask / FastAPI API service
+Optimize using TensorRT-LLM / Edge AI SDKs
