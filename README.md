@@ -53,6 +53,7 @@ VLM Models: LLaVA / BLIP
 Tools: OpenCV, Docker, jetson-containers
 
 ## 📁 Project Structure
+```text
 vlm-jetson-demo/
 ├── README.md
 ├── app/
@@ -65,6 +66,7 @@ vlm-jetson-demo/
 │   ├── run_container.sh
 │   └── check_camera.sh
 └── requirements.txt
+```
 
 ## ⚙️ Setup Instructions
 1. Clone Repository
