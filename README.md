@@ -42,7 +42,7 @@ Prompt + Query
 GenAI Agent Logic
         ↓
 Robot / IoT Action
-
+'''
 
 ## 🛠️ Tech Stack
 Hardware: NVIDIA Jetson AGX Orin
